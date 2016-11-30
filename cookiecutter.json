@@ -1,0 +1,5 @@
+{
+    "title": "My Awesome Site",
+    "domain": "myawesomesite.com",
+    "secret": "secret_to_hash_your_cookie"
+}

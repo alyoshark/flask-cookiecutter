@@ -1,0 +1,22 @@
+# See http://help.github.com/ignore-files/ for more about ignoring files.
+
+*.pyc
+
+# dev folders / files, which will be created during deployment
+/log
+/mysql
+# /static
+/configs
+config.cfg
+/.idea/
+
+# OS generated files #
+######################
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+.swp
+ehthumbs.db
+Thumbs.db

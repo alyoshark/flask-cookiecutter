@@ -1,0 +1,10 @@
+web:
+  build: .
+  ports:
+    - "80:80"
+    - "15000:5000"
+  volumes:
+    - .:/var/www/{{cookiecutter.domain}}
+    - ./nginx-site.conf:/etc/nginx/sites-enabled/nginx-site.conf
+  # command:  "sh -c 'cd /var/www/{{cookiecutter.domain}} && bash start.sh'"
+  command:  "sh -c 'cd /var/www/{{cookiecutter.domain}}/api && python wsgi.py'"
